@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	background:url('/public/img/fondo.jpg');
+	
+	}
+	
+h1{
+	
+	color:#FFFFFF;
+	text-shadow: 5px 5px 5px rgba(0,0,0,1);
+	size:30px;
+}	
+
+.color_text_blanco{
+	
+	color:#FFFFFF;
+	
+}
+
+#eslogan{
+	 text-align:center;
+		
+}
