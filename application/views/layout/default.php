@@ -79,8 +79,6 @@ body {
 			<?php 	if(!isset($session['id'])){ ?>
 			<li><a href="/grupos">Grupos</a></li>
 			<li><a href="/como-funciona">¿Como Funciona?</a></li>
-			<li><a id="" href="/">Registrarse</a></li>
-			<li><a id="login" href="#login">Login</a></li>
 			<?php }else{?>
 			<li><a href="/app/migrupo">Home</a></li>
 			<li><a href="/app/nuevogrupo">Nuevo Grupo</a></li>

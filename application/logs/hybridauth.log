@@ -1,0 +1,45 @@
+INFO -- 127.0.0.1 -- 2013-05-26T16:23:58-04:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2013-05-26T16:23:58-04:00 -- Hybrid_Auth::initialize(). PHP version: 5.3.8
+INFO -- 127.0.0.1 -- 2013-05-26T16:23:58-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.1.2
+INFO -- 127.0.0.1 -- 2013-05-26T16:23:58-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://teavise.localhost/hauth/login
+ERROR -- 127.0.0.1 -- 2013-05-26T16:23:58-04:00 -- Hybridauth Library needs the CURL PHP extension. -- 
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:39-04:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:39-04:00 -- Hybrid_Auth::initialize(). PHP version: 5.3.8
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:39-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.1.2
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:39-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://teavise.localhost/hauth/login/Google
+ERROR -- 127.0.0.1 -- 2013-05-26T16:24:39-04:00 -- Hybridauth Library needs the CURL PHP extension. -- 
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:43-04:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:43-04:00 -- Hybrid_Auth::initialize(). PHP version: 5.3.8
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:43-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.1.2
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:43-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://teavise.localhost/hauth/login/Twitter
+ERROR -- 127.0.0.1 -- 2013-05-26T16:24:43-04:00 -- Hybridauth Library needs the CURL PHP extension. -- 
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:46-04:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:46-04:00 -- Hybrid_Auth::initialize(). PHP version: 5.3.8
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:46-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.1.2
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:46-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://teavise.localhost/hauth/login/Facebook
+ERROR -- 127.0.0.1 -- 2013-05-26T16:24:46-04:00 -- Hybridauth Library needs the CURL PHP extension. -- 
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:50-04:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:50-04:00 -- Hybrid_Auth::initialize(). PHP version: 5.3.8
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:50-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.1.2
+INFO -- 127.0.0.1 -- 2013-05-26T16:24:50-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://teavise.localhost/hauth/login/LinkedIn
+ERROR -- 127.0.0.1 -- 2013-05-26T16:24:50-04:00 -- Hybridauth Library needs the CURL PHP extension. -- 
+INFO -- 127.0.0.1 -- 2013-05-26T16:27:24-04:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2013-05-26T16:27:24-04:00 -- Hybrid_Auth::initialize(). PHP version: 5.3.8
+INFO -- 127.0.0.1 -- 2013-05-26T16:27:24-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.1.2
+INFO -- 127.0.0.1 -- 2013-05-26T16:27:24-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://teavise.localhost/hauth/login/Facebook
+ERROR -- 127.0.0.1 -- 2013-05-26T16:27:24-04:00 -- Hybridauth Library needs the CURL PHP extension. -- 
+INFO -- 127.0.0.1 -- 2013-05-26T16:27:37-04:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2013-05-26T16:27:37-04:00 -- Hybrid_Auth::initialize(). PHP version: 5.3.8
+INFO -- 127.0.0.1 -- 2013-05-26T16:27:37-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.1.2
+INFO -- 127.0.0.1 -- 2013-05-26T16:27:37-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://teavise.localhost/hauth/login/Facebook
+ERROR -- 127.0.0.1 -- 2013-05-26T16:27:37-04:00 -- Hybridauth Library needs the CURL PHP extension. -- 
+INFO -- 127.0.0.1 -- 2013-05-26T16:32:23-04:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2013-05-26T16:32:23-04:00 -- Hybrid_Auth::initialize(). PHP version: 5.3.8
+INFO -- 127.0.0.1 -- 2013-05-26T16:32:23-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.1.2
+INFO -- 127.0.0.1 -- 2013-05-26T16:32:23-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://teavise.localhost/hauth/login/Facebook
+ERROR -- 127.0.0.1 -- 2013-05-26T16:32:23-04:00 -- Hybridauth Library needs the CURL PHP extension. -- 
+INFO -- 127.0.0.1 -- 2013-05-26T21:37:13-04:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2013-05-26T21:37:13-04:00 -- Hybrid_Auth::initialize(). PHP version: 5.3.8
+INFO -- 127.0.0.1 -- 2013-05-26T21:37:13-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.1.2
+INFO -- 127.0.0.1 -- 2013-05-26T21:37:13-04:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://teavise.localhost/hauth/login/Google
+ERROR -- 127.0.0.1 -- 2013-05-26T21:37:13-04:00 -- Hybridauth Library needs the CURL PHP extension. -- 

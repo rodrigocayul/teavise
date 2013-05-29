@@ -323,4 +323,9 @@ class app extends CI_Controller {
 		return $r;		
 	}
 	
+	public function getSession(){
+		echo "<pre>edede";
+		$session = $this->session->userdata('obj'); 
+		print_r($session);
+	}
 }

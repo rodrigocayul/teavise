@@ -101,12 +101,7 @@ body {
 	</div>
 	<?php echo (isset($content) ? $this->load->view($content) : "" ); ?>
 	<hr />
-	<div class="span12" style="margin-bottom:10px;">
-		ALOJADO EN <a href="http://panel.infranetworking.com/aff.php?aff=272" target="_blank"><img src="/public/img/infranetworking-logo.png" border="0" width="150px" /></a>
-		<!--	
-		DESARROLLADO POR <a href="http://siempreconectado.cl" target="_blank"><img src="/public/img/logo_siempreconectado.png" border="0" width="100px" /></a>
-		-->
-	</div>
+
 
 </div>
 

@@ -10,6 +10,8 @@
 <link href="<?php echo base_url(); ?>public/lib/bootstrap/css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" >
 
 <link href="<?php echo base_url(); ?>public/css/estilo.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="<?php echo base_url(); ?>public/lib/social-buttons/css/zocial.css" media="screen" rel="stylesheet" type="text/css" >
+
 
 <script src="<?php echo base_url(); ?>public/js/jquery.js"></script>
 <script src="<?php echo base_url(); ?>public/js/jquery.blockUI.js"></script>
@@ -27,12 +29,12 @@
 	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 	cursor: pointer;
 }
+	#contenedor_Layout {
+		background-color: #FFF;
+		margin-bottom: 20px;
+	}
 
-{
-active;
-}	
-body {
-}
+
 </style>
 </head>
 <body>
@@ -76,7 +78,6 @@ body {
 			<?php 	if(!isset($session['id'])){ ?>
 			<li><a href="/grupos">Grupos</a></li>
 			<li><a href="/como-funciona">¿Como Funciona?</a></li>
-			<li><a id="login" href="#login">Login</a></li>
 			<?php }else{?>
 			<li><a href="/app/migrupo">Mi Grupos</a></li>
 			<li><a href="/app/publicar">Publicar</a></li>
@@ -89,24 +90,10 @@ body {
 	</div>
 	<?php echo (isset($content) ? $this->load->view($content) : "" ); ?>
 	
-	<!--
-	<hr />
-	<span id="signinButton">
-		  <span
-			class="g-signin"
-			data-callback="signinCallback"
-			data-clientid="233802990436.apps.googleusercontent.com"
-			data-cookiepolicy="single_host_origin"
-			data-requestvisibleactions="http://schemas.google.com/AddActivity"
-			data-scope="https://www.googleapis.com/auth/plus.login">
-		  </span>
-	</span>
-	
-	<a href="#" id="revokeButton" >s</a>
--->
+
 </div>
 
-	<!-- Place this asynchronous JavaScript just before your </body> tag -->
+
 <script type="text/javascript">
 $(document).ready(function(){
 	

@@ -20,6 +20,18 @@ class Home extends CI_Controller {
 		$view['content'] 	=  "home/index";
 		$this->load->view($this->layout,$view);
 		
+	}	
+	
+	public function index2()
+	{
+		$session = $this->session->userdata('data'); 
+		if(isset($session['id'])){
+			redirect('app/index');
+		}
+		$this->layout = "layout/bienvenida2";
+		$view['content'] 	=  "home/index2";
+		$this->load->view($this->layout,$view);
+		
 	}
 	
 	public function listado()

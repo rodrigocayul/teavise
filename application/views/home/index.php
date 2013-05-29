@@ -4,19 +4,15 @@
 		
 		<div class="span6">
 		
-			<form id="registarse" action="" method="POST">
-			<div class="span5"><h1>Registrate<br /> y crea tu Grupo</h1></div>
-			<div class="span5 color_text_blanco">E-mail</div>
-			<div class="span5"><input type="text" name="email" id="email" /></div>
+			<div class="span5"><h1>Crea tu Grupo</h1></div>
+			<div class="span5 color_text_blanco">Puedes Crear tu Grupo utilizando:</div>
+			<div class="span5" style="margin-bottom:10px;"><a href="/hauth/login/Facebook" class="zocial facebook">Conectar con Facebook</a></div>
 			
-			<div class="span5 color_text_blanco">Contraseña</div>
-			<div class="span5"><input type="password" name="password" id="password" /></div>
+			<div class="span5"><a href="/hauth/login/Google" class="zocial googleplus">Conectar con Google+</a></div>
 			
-			<div class="span5 color_text_blanco">Repetir Contraseña</div>
-			<div class="span5"><input type="password" name="re_password" id="re_password" /></div>
 			
-			<div class="span5"><input class="btn btn-large btn-success" type="submit" value="Crear Cuenta"></div>
-			</form>
+			
+			
 		</div>
 		
 		<div class="span5">
