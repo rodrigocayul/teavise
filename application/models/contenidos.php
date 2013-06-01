@@ -32,6 +32,8 @@ class Contenidos extends CI_Model {
 		JOIN secciones b ON (a.seccione_id = b.id)
 		JOIN materiales c ON (a.materiale_id = c.id)
 		WHERE a.seccione_id = {$seccione_id} {$AND} ORDER BY id DESC";
-  		return $this->db->query($SQL);
+  		$query = $this->db->query($SQL);
+		$this->db->close();
+		return $query;
     }
 }

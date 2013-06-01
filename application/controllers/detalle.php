@@ -16,7 +16,7 @@ class detalle extends CI_Controller {
 		$view['secciones'] = 	$this->db->where('id',$view['detalle']->seccione_id)->get('secciones')->row();
 		$view['upload'] = 	$this->db->where('contenido_id',$id)->get('uploades')->result(); 	
 		
-		
+		$this->db->close();
 		$this->load->view($this->layout,$view);
 		
 	}	

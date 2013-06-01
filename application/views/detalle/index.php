@@ -43,7 +43,7 @@
 
     <script>
       window.___gcfg = {
-        lang: 'en-US'
+        lang: 'es-ES',
       };
 
       (function() {

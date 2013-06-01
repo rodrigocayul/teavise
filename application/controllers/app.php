@@ -126,7 +126,7 @@ class app extends CI_Controller {
 				mail($destinatario,$asunto,$cuerpo,$headers); 
 				
 			}
-			
+			$this->db->close();
 			redirect("/app/migrupo" , "refresh");
 		}
 		
@@ -149,7 +149,7 @@ class app extends CI_Controller {
 		$view['mis_grupos'] = $this->db->query("select b.* from 
 								usuarios_secciones  a JOIN secciones b ON (a.seccione_id = b.id)
 								where usuario_id = {$session['id']};")->result();	
-								
+		$this->db->close();						
 		$this->load->view($this->layout,$view);
 		
 		
@@ -320,6 +320,7 @@ class app extends CI_Controller {
 		if(isset($data->id)){
 			$r = TRUE;
 		}
+		$this->db->close();
 		return $r;		
 	}
 	
