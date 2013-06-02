@@ -44,6 +44,7 @@ $route['404_override'] = '';
 
 //Mis Rutas
 $route['grupo/(:any)'] = 'grupo/index/$1';
+$route['curso/(:any)'] = 'grupo/index/$1';
 $route['grupos'] = 'home/listado';
 $route['detalle/(:any)'] = 'detalle/index/$1';
 $route['detalle/descargar'] = 'detalle/descargar';
@@ -51,6 +52,7 @@ $route['detalle/viewdoc'] = 'detalle/viewdoc';
 $route['publicador/ajaxseccion'] = 'grupo/ajaxseccion';
 $route['publicador/agregarsusacriptor'] = 'grupo/agregarsusacriptor';
 $route['como-funciona'] = 'home/comofunciona';
+$route['login'] = 'home/login';
 
 
 

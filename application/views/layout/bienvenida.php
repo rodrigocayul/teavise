@@ -9,7 +9,7 @@
 <link href="<?php echo base_url(); ?>public/lib/bootstrap/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" >
 <link href="<?php echo base_url(); ?>public/lib/bootstrap/css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" >
 
-<link href="<?php echo base_url(); ?>public/css/estilo.css" media="screen" rel="stylesheet" type="text/css" >
+<!--<link href="<?php echo base_url(); ?>public/css/estilo.css" media="screen" rel="stylesheet" type="text/css" >-->
 <link href="<?php echo base_url(); ?>public/lib/social-buttons/css/zocial.css" media="screen" rel="stylesheet" type="text/css" >
 
 
@@ -26,7 +26,7 @@
 #logo:hover{
 	opacity:1.0;
 	filter:alpha(opacity=100); /* For IE8 and earlier */
-	text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+	text-box: 3px 3px 3px rgba(0,0,0,0.5);
 	cursor: pointer;
 }
 	#contenedor_Layout {
@@ -34,6 +34,16 @@
 		margin-bottom: 20px;
 	}
 
+.lasombra{
+	
+	color:#FFFFFF;
+	text-shadow: 5px 5px 5px rgba(0,0,0,1);
+	size:30px;
+}	
+
+.color_text_blanco{
+	color:#FFFFFF;
+}
 
 </style>
 </head>
@@ -48,21 +58,9 @@
 		}
 	}
 	?>
-	<div id="contenedor_login" class="well" <?php echo ($openLogin == true ? '' : 'style="display:none;"' ); ?>>
-		<div><h3>Acceder</h3></div>
-		<form action="/cuenta/iniciar_session" method="POST" id="form_login">
-			Email
-			<input type="text" name="usuario" id="inputEmail" placeholder="Email">
-			Password
-			<input type="password" name="clave" id="inputPassword" placeholder="Password">
-			<button type="submit" class="btn btn-success">Acceder</button>
-		</form>
-	</div>
 	
-	<?php 
-	$session = $this->session->userdata('data'); 
+	<?php 	$session = $this->session->userdata('data'); ?>
 	
-	?>
 	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container">
@@ -71,19 +69,19 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</a>
-			<a id="logo" class="brand" href="/">teavise.cl</a>
+			<a id="logo" class="brand" href="/" title="teavise"><img src="/public/img/teavise.png" /></a>
 			<div class="nav-collapse">
-			<ul class="nav">
-			
-			<?php 	if(!isset($session['id'])){ ?>
-			<li><a href="/grupos">Grupos</a></li>
-			<li><a href="/como-funciona">¿Como Funciona?</a></li>
-			<?php }else{?>
-			<li><a href="/app/migrupo">Mi Grupos</a></li>
-			<li><a href="/app/publicar">Publicar</a></li>
-			<li><a href="/cuenta/salir">Salir</a></li>
-			<?php } ?>
-			</ul>
+				<ul class="nav">
+					<?php 	if(!isset($session['id'])){ ?>
+					<li><a href="/grupos">Grupos</a></li>
+					<li><a href="/como-funciona">¿Como Funciona?</a></li>
+					<li><a href="/login">Login</a></li>
+					<?php }else{?>
+					<li><a href="/app/migrupo">Mi Grupos</a></li>
+					<li><a href="/app/publicar">Publicar</a></li>
+					<li><a href="/cuenta/salir">Salir</a></li>
+					<?php } ?>
+				</ul>
 			</div><!--/.nav-collapse -->
 			</div>
 		</div>
@@ -92,53 +90,6 @@
 	
 
 </div>
-
-
-<script type="text/javascript">
-$(document).ready(function(){
-	
-
-
-	$('#login').click(function(){
-		$('#contenedor_login').slideToggle(600);	
-		$('#inputEmail').focus();
-		return false;
-	});
-	
-	$('#form_login').submit(function(){
-		$.ajax({
-			type: "POST",
-			url: '/cuenta/iniciar_session',
-			data: $(this).serialize() ,
-			dataType: 'text', 
-			cache: false,
-			async: false,
-			success: function(data){
-				if(data==1){
-					location.href="/app";
-				}
-				if(data==0){
-					alert("Usuario Incorrecto");
-				}
-				
-			}
-		});
-		return false;
-	});
-	
-	<?php 
-	if(isset($_GET['r'])){ 
-		if($_GET['r'] == "logearse"){
-	?>
-		$('#login').trigger('click');
-	
-	<?php 
-		}
-	} 
-	?>
-});
-</script>	
-
 
 <!-- Le javascript
 ================================================== -->

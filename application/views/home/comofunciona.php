@@ -3,7 +3,7 @@
 
 <h1>¿Cómo funciona TeAvise?</h1>
 <ul>
-<li>Tienes que registrarte con un e-mail válido</li>
+<li>Tienes que registrarte utilizando Facebook o Google+</li>
 <li>Una vez registrado puedes crear tu grupo</li>
 <li>Comparte la URL del grupo con tus amigos para que se puedan suscribir</li>
 <li>Comienza a publicar la información y noticias del grupo</li>

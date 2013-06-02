@@ -58,16 +58,6 @@ body {
 		}
 	}
 	?>
-	<div id="contenedor_login" class="well" <?php echo ($openLogin == true ? '' : 'style="display:none;"' ); ?>>
-		<div><h3>Acceder</h3></div>
-		<form action="/cuenta/iniciar_session" method="POST" id="form_login">
-			Email
-			<input type="text" name="usuario" id="inputEmail" placeholder="Email">
-			Password
-			<input type="password" name="clave" id="inputPassword" placeholder="Password">
-			<button type="submit" class="btn btn-success">Acceder</button>
-		</form>
-	</div>
 	
 	<?php 
 	$session = $this->session->userdata('data'); 
@@ -81,7 +71,7 @@ body {
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</a>
-			<a id="logo" class="brand" href="/">teavise.cl</a>
+			<a id="logo" class="brand" href="/" title="teavise"><img src="/public/img/teavise.png" /></a>
 			<div class="nav-collapse">
 			<ul class="nav">
 			

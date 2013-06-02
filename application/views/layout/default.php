@@ -8,7 +8,7 @@
 <!-- Le styles -->
 <link href="<?php echo base_url(); ?>public/lib/bootstrap/css/bootstrap.css" media="screen" rel="stylesheet" type="text/css" >
 <link href="<?php echo base_url(); ?>public/lib/bootstrap/css/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" >
-
+<link href="<?php echo base_url(); ?>public/lib/social-buttons/css/zocial.css" media="screen" rel="stylesheet" type="text/css" >
 <script src="<?php echo base_url(); ?>public/js/jquery.js"></script>
 
 <style>
@@ -49,16 +49,6 @@ body {
 		}
 	}
 	?>
-	<div id="contenedor_login" class="well" <?php echo ($openLogin == true ? '' : 'style="display:none;"' ); ?>>
-		<div><h3>Acceder</h3></div>
-		<form action="/cuenta/iniciar_session" method="POST" id="form_login">
-			Email
-			<input type="text" name="usuario" id="inputEmail" placeholder="Email">
-			Password
-			<input type="password" name="clave" id="inputPassword" placeholder="Password">
-			<button type="submit" class="btn btn-success">Acceder</button>
-		</form>
-	</div>
 	
 	<?php 
 	$session = $this->session->userdata('data'); 
@@ -72,13 +62,14 @@ body {
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</a>
-			<a id="logo" class="brand" href="/">teavise.cl</a>
+			<a id="logo" class="brand" href="/" title="teavise"><img src="/public/img/teavise.png" /></a>
 			<div class="nav-collapse">
 			<ul class="nav">
 			
 			<?php 	if(!isset($session['id'])){ ?>
 			<li><a href="/grupos">Grupos</a></li>
 			<li><a href="/como-funciona">¿Como Funciona?</a></li>
+			<li><a href="/login">Login</a></li>
 			<?php }else{?>
 			<li><a href="/app/migrupo">Home</a></li>
 			<li><a href="/app/nuevogrupo">Nuevo Grupo</a></li>
@@ -100,49 +91,6 @@ body {
 	</div>
 
 </div>
-
-<script>
-$(document).ready(function(){
-	$('#login').click(function(){
-		$('#contenedor_login').slideToggle(600);	
-		$('#inputEmail').focus();
-		return false;
-	});
-	
-	$('#form_login').submit(function(){
-		$.ajax({
-			type: "POST",
-			url: '/cuenta/iniciar_session',
-			data: $(this).serialize() ,
-			dataType: 'text', 
-			cache: false,
-			async: false,
-			success: function(data){
-				if(data==1){
-					location.href="/app";
-				}
-				if(data==0){
-					alert("Usuario Incorrecto");
-				}
-				
-			}
-		});
-		return false;
-	});
-	
-	<?php 
-	if(isset($_GET['r'])){ 
-		if($_GET['r'] == "logearse"){
-	?>
-		$('#login').trigger('click');
-	
-	<?php 
-		}
-	} 
-	?>
-});
-</script>	
-
 
 <!-- Le javascript
 ================================================== -->
